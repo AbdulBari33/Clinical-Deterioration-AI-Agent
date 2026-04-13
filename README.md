@@ -1,27 +1,33 @@
-# Clinical Deterioration AI
+# Clinical Deterioration AI – Synthea
 
-A modular Python package and FastAPI application for predicting patient clinical deterioration risk.
+AI-powered early warning system designed to predict short-term patient clinical deterioration using synthetic electronic health record (EHR) data generated from Synthea.
 
-## Features
-- Python package structure
-- Risk prediction module
-- FastAPI backend
-- Interactive API docs with Swagger
-- Modular code organization for future ML integration
+## Overview
 
-## Project Structure
+This project combines machine learning and API engineering to support early clinical risk detection. It processes synthetic healthcare data, applies rule-based and model-ready risk prediction logic, and exposes prediction endpoints through a FastAPI backend.
 
-```text
-Clinical Deterioration AI Agent/
-├── src/
-│   └── clinical_deterioration_ai/
-│       ├── __init__.py
-│       ├── predictor.py
-│       ├── preprocess.py
-│       ├── model.py
-│       ├── api.py
-│       └── utils.py
-├── .gitignore
-├── pyproject.toml
-├── README.md
-└── docker-compose.yml
+## Key Features
+
+- Modular Python package structure
+- FastAPI REST API for prediction endpoints
+- Synthetic EHR data workflow using Synthea
+- Risk scoring logic for clinical deterioration prediction
+- Clean project structure for future ML model integration
+
+## Tech Stack
+
+- Python
+- FastAPI
+- Uvicorn
+- Pandas
+- Scikit-learn
+- Synthetic EHR data
+- Docker
+
+## Installation
+
+```bash
+git clone https://github.com/AbdulBari33/clinical-deterioration-ai-synthea.git
+cd clinical-deterioration-ai-synthea
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -e .
