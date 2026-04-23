@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clinical-deterioration-ai"
+version = "0.1.0"
+description = "AI-powered early warning system for predicting short-term clinical deterioration using synthetic EHR data."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  {name = "Abdul Bari"}
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
